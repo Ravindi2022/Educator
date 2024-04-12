@@ -1,3 +1,4 @@
+import 'package:educator/pdfView.dart';
 import 'package:flutter/material.dart';
 
 class page14 extends StatelessWidget {
@@ -37,12 +38,15 @@ class page14 extends StatelessWidget {
 
                 ImageButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => PdfViewerPage(
-                              'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20lesson.pdf?alt=media&token=2987a863-1a51-4037-995e-259e60381a88')),
-                    );
+                    createFileOfPdfUrl(
+                            'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20questions.pdf?alt=media&token=afef28ec-0633-4a3f-8bd8-6669da8914d6')
+                        .then((f) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(Path: f.path)),
+                      );
+                    });
                   },
                   image: const AssetImage('assets/lesson.jpg'),
                   width: 300.0,
@@ -55,12 +59,15 @@ class page14 extends StatelessWidget {
                 const SizedBox(height: 20),
                 ImageButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => PdfViewerPage(
-                              'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20lesson.pdf?alt=media&token=2987a863-1a51-4037-995e-259e60381a88')),
-                    );
+                    createFileOfPdfUrl(
+                            'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20questions.pdf?alt=media&token=afef28ec-0633-4a3f-8bd8-6669da8914d6')
+                        .then((f) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(Path: f.path)),
+                      );
+                    });
                   },
                   image: const AssetImage('assets/lesson.jpg'),
                   width: 300.0,
@@ -73,12 +80,15 @@ class page14 extends StatelessWidget {
                 const SizedBox(height: 20),
                 ImageButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => PdfViewerPage(
-                              'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20lesson.pdf?alt=media&token=2987a863-1a51-4037-995e-259e60381a88')),
-                    );
+                    createFileOfPdfUrl(
+                            'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20questions.pdf?alt=media&token=afef28ec-0633-4a3f-8bd8-6669da8914d6')
+                        .then((f) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(Path: f.path)),
+                      );
+                    });
                   },
                   image: const AssetImage('assets/lesson.jpg'),
                   width: 300.0,
@@ -92,12 +102,15 @@ class page14 extends StatelessWidget {
 
                 ImageButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => PdfViewerPage(
-                              'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20lesson.pdf?alt=media&token=2987a863-1a51-4037-995e-259e60381a88')),
-                    );
+                    createFileOfPdfUrl(
+                            'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20questions.pdf?alt=media&token=afef28ec-0633-4a3f-8bd8-6669da8914d6')
+                        .then((f) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(Path: f.path)),
+                      );
+                    });
                   },
                   image: const AssetImage('assets/lesson.jpg'),
                   width: 300.0,
@@ -110,12 +123,15 @@ class page14 extends StatelessWidget {
                 const SizedBox(height: 20), // Adjust spacing as needed
                 ImageButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => PdfViewerPage(
-                              'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20lesson.pdf?alt=media&token=2987a863-1a51-4037-995e-259e60381a88')),
-                    );
+                    createFileOfPdfUrl(
+                            'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20questions.pdf?alt=media&token=afef28ec-0633-4a3f-8bd8-6669da8914d6')
+                        .then((f) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(Path: f.path)),
+                      );
+                    });
                   },
                   image: const AssetImage('assets/lesson.jpg'),
                   width: 300.0,
@@ -128,12 +144,15 @@ class page14 extends StatelessWidget {
                 const SizedBox(height: 20), // Adjust spacing as needed
                 ImageButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => PdfViewerPage(
-                              'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20lesson.pdf?alt=media&token=2987a863-1a51-4037-995e-259e60381a88')),
-                    );
+                    createFileOfPdfUrl(
+                            'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20questions.pdf?alt=media&token=afef28ec-0633-4a3f-8bd8-6669da8914d6')
+                        .then((f) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(Path: f.path)),
+                      );
+                    });
                   },
                   image: const AssetImage('assets/final_paper.jpg'),
                   width: 300.0,
@@ -172,7 +191,7 @@ class ImageButton extends StatelessWidget {
     required this.onPressed,
     required this.image,
     this.width = 100.0,
-    this.height = 50.0,
+    this.height = 50.0, 
   });
 
   @override
