@@ -20,71 +20,123 @@ class page28 extends StatelessWidget {
             ),
           ),
         ),
-        
         body: SingleChildScrollView(
-          
           child: Padding(
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
                 const Text(
-              'Database Management System',
-              style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
-            ),
-                const SizedBox(height: 20), 
+                  'Database Management System',
+                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 20),
                 ImageButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PdfViewerPage(
+                              'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20lesson.pdf?alt=media&token=2987a863-1a51-4037-995e-259e60381a88')),
+                    );
+                  },
                   image: const AssetImage('assets/freestock_574456060.jpg'),
                   width: 200.0,
                   height: 200.0,
                 ),
-                 const Text('short note 1',
-                style: TextStyle(fontSize: 18.0, fontWeight:FontWeight.w200),),
-                const SizedBox(height: 20), 
+                const Text(
+                  'short note 1',
+                  style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w200),
+                ),
+                const SizedBox(height: 20),
                 ImageButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PdfViewerPage(
+                              'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20lesson.pdf?alt=media&token=2987a863-1a51-4037-995e-259e60381a88')),
+                    );
+                  },
                   image: const AssetImage('assets/freestock_574456060.jpg'),
                   width: 200.0,
                   height: 200.0,
                 ),
-                 const Text('short note 2',
-                style: TextStyle(fontSize: 18.0, fontWeight:FontWeight.w200),),
-                const SizedBox(height: 20), 
+                const Text(
+                  'short note 2',
+                  style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w200),
+                ),
+                const SizedBox(height: 20),
                 ImageButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PdfViewerPage(
+                              'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20lesson.pdf?alt=media&token=2987a863-1a51-4037-995e-259e60381a88')),
+                    );
+                  },
                   image: const AssetImage('assets/freestock_574456060.jpg'),
                   width: 200.0,
                   height: 200.0,
                 ),
-                 const Text('short note 3',
-                style: TextStyle(fontSize: 18.0, fontWeight:FontWeight.w200),),
+                const Text(
+                  'short note 3',
+                  style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w200),
+                ),
                 const SizedBox(height: 20), // Adjust spacing as needed
                 ImageButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PdfViewerPage(
+                              'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20lesson.pdf?alt=media&token=2987a863-1a51-4037-995e-259e60381a88')),
+                    );
+                  },
                   image: const AssetImage('assets/freestock_574456060.jpg'),
                   width: 200.0,
                   height: 200.0,
                 ),
-                 const Text('short note 4',
-                style: TextStyle(fontSize: 18.0, fontWeight:FontWeight.w200),),
+                const Text(
+                  'short note 4',
+                  style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w200),
+                ),
                 const SizedBox(height: 20), // Adjust spacing as needed
                 ImageButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PdfViewerPage(
+                              'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20lesson.pdf?alt=media&token=2987a863-1a51-4037-995e-259e60381a88')),
+                    );
+                  },
                   image: const AssetImage('assets/freestock_574456060.jpg'),
                   width: 200.0,
                   height: 200.0,
                 ),
-                const Text('short note 5',
-                style: TextStyle(fontSize: 18.0, fontWeight:FontWeight.w200),),
+                const Text(
+                  'short note 5',
+                  style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w200),
+                ),
                 const SizedBox(height: 20), // Adjust spacing as needed
                 ImageButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PdfViewerPage(
+                              'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Example%20for%20lesson.pdf?alt=media&token=2987a863-1a51-4037-995e-259e60381a88')),
+                    );
+                  },
                   image: const AssetImage('assets/freestock_574456060.jpg'),
                   width: 200.0,
                   height: 200.0,
                 ),
-                 const Text('short note 6',
-                style: TextStyle(fontSize: 18.0, fontWeight:FontWeight.w200),),
+                const Text(
+                  'short note 6',
+                  style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w200),
+                ),
                 const SizedBox(height: 20), // Adjust spacing as needed
               ],
             ),
@@ -93,6 +145,15 @@ class page28 extends StatelessWidget {
       ),
     );
   }
+}
+
+class PdfViewerPage extends StatelessWidget {
+  final String pdfUrl;
+
+  PdfViewerPage(this.pdfUrl);
+
+  @override
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
 }
 
 class ImageButton extends StatelessWidget {
@@ -125,4 +186,3 @@ class ImageButton extends StatelessWidget {
     );
   }
 }
-
