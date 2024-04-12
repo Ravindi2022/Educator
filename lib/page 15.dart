@@ -1,9 +1,14 @@
+import 'package:educator/pdfView.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart'; // Import the url_launcher package
 
 class Page15 extends StatelessWidget {
   final List<Map<String, String>> links = [
-    {'title': 'Reference link 1', 'url': 'https://stackoverflow.com/questions/43583411/how-to-create-a-hyperlink-in-flutter-widget'},
+    {
+      'title': 'Reference link 1',
+      'url':
+          'https://stackoverflow.com/questions/43583411/how-to-create-a-hyperlink-in-flutter-widget'
+    },
     {'title': 'Reference link 2', 'url': 'https://www.example.com/link2'},
     {'title': 'Reference link 3', 'url': 'https://www.example.com/link3'},
     {'title': 'Reference link 4', 'url': 'https://www.example.com/link4'},
@@ -43,7 +48,17 @@ class Page15 extends StatelessWidget {
                               ),
                             ),
                             onPressed: () {
-                              _launchURL(link['url']!); // Launch URL when button is pressed
+                              createFileOfPdfUrl(
+                                      'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Reference%20Links.pdf?alt=media&token=1a8280ce-dfae-462f-9f8a-2c4d6e27e799')
+                                  .then((f) {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          PDFScreen(Path: f.path)),
+                                );
+                              });
+                              // Launch URL when button is pressed
                             },
                             child: Text(
                               link['title']!,
