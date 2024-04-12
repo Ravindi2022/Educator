@@ -9,7 +9,7 @@ class splash_screen extends StatelessWidget {
         body: Stack(
           children: [
             Positioned(
-              left: -33,
+              left: -33, 
               top: 63,
               child: Container(
                 width: 94,
