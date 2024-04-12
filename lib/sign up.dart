@@ -1,8 +1,8 @@
 import 'package:educator/home.dart';
-import 'package:educator/signin.dart';
+import 'package:educator/singin.dart';
 import 'package:flutter/material.dart';
 
-class sign_up extends StatelessWidget {
+class sing_up extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
