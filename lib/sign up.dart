@@ -1,6 +1,6 @@
 import 'package:educator/home.dart';
 import 'package:educator/singin.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; 
 
 class sing_up extends StatelessWidget {
   @override
