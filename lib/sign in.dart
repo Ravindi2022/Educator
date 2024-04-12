@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class sing_in extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     return MaterialApp(
       title: 'Educator App',
       theme: ThemeData(
