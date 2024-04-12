@@ -1,5 +1,5 @@
+import 'package:educator/pdfView.dart';
 import 'package:flutter/material.dart';
-
 
 class page20 extends StatelessWidget {
   @override
@@ -51,6 +51,16 @@ class MyHomePage extends StatelessWidget {
                             ),
                           ),
                           onPressed: () {
+                            createFileOfPdfUrl(
+                                    'https://firebasestorage.googleapis.com/v0/b/educator99-33923.appspot.com/o/Reference%20Links.pdf?alt=media&token=1a8280ce-dfae-462f-9f8a-2c4d6e27e799')
+                                .then((f) {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        PDFScreen(Path: f.path)),
+                              );
+                            });
                             // Handle link tap here
                           },
                           child: Text(
@@ -58,7 +68,7 @@ class MyHomePage extends StatelessWidget {
                             style: TextStyle(fontSize: 18),
                           ),
                         ),
-                      ), 
+                      ),
                     )
                     .toList(),
               ],
