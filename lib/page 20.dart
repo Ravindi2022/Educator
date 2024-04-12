@@ -58,7 +58,7 @@ class MyHomePage extends StatelessWidget {
                             style: TextStyle(fontSize: 18),
                           ),
                         ),
-                      ),
+                      ), 
                     )
                     .toList(),
               ],
