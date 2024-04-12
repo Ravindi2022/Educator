@@ -7,7 +7,7 @@ import 'package:educator/page13.dart';
 import 'package:educator/page14.dart';
 import 'package:educator/page15.dart';
 import 'package:educator/page16.dart';
-import 'package:educator/page17.dart';
+import 'package:educator/page17.dart'; 
 import 'package:educator/page18.dart';
 import 'package:educator/page19.dart';
 import 'package:educator/page20.dart';
