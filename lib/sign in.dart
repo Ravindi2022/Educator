@@ -3,7 +3,7 @@ import 'package:educator/page10.dart';
 import 'package:educator/page5.dart';
 import 'package:flutter/material.dart';
 
-class sign_in extends StatelessWidget {
+class sing_in extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
