@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:url_launcher/url_launcher.dart'; // Import url_launcher package
 
 class page10 extends StatelessWidget {
   @override
@@ -9,7 +9,6 @@ class page10 extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        
       ),
       home: MyHomePage(),
     );
@@ -17,21 +16,19 @@ class page10 extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  final List<String> links = [
-    'reference link 1',
-    'reference link 2', // Added a space after "link"
-    'reference link 3',
-    'reference link 4',
-    'reference link 5',
+  final List<List<String>> links = [
+    ['reference link 1', 'https://stackoverflow.com/questions/43583411/how-to-create-a-hyperlink-in-flutter-widget'],
+    ['reference link 2', 'https://example.com/link2'],
+    ['reference link 3', 'https://example.com/link3'],
+    ['reference link 4', 'https://example.com/link4'],
+    ['reference link 5', 'https://example.com/link5'],
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     
       body: SingleChildScrollView(
         child: Center(
-          
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -39,11 +36,11 @@ class MyHomePage extends StatelessWidget {
               children: [
                 SizedBox(
                   child: Text(
-                                'Introduction to Computer Science',
-                                textAlign: TextAlign.center, style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold ),
-                              ),
+                    'Introduction to Computer Science',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                  ),
                 ),
-            
                 Padding(
                   padding: const EdgeInsets.all(30.0),
                   child: Text(
@@ -62,10 +59,10 @@ class MyHomePage extends StatelessWidget {
                             ),
                           ),
                           onPressed: () {
-                            // Handle link tap here
+                            launchURL(link[1]); // Launch URL on button press
                           },
                           child: Text(
-                            link,
+                            link[0],
                             style: TextStyle(fontSize: 18),
                           ),
                         ),
@@ -78,5 +75,14 @@ class MyHomePage extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  // Function to launch URL
+  void launchURL(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 }
